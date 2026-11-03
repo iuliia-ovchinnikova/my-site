@@ -1,4 +1,5 @@
-import './style.less'
+import './style.less';
+import './cover.less';
 
 
 
