@@ -1,0 +1,161 @@
+.cover { 
+  .container();
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+ 
+  &__glare {
+  position: relative;   
+  display: block;     
+ }
+   .blic {
+ position: absolute;    
+ top: 55%;
+ left: 52%; 
+ transform: translate(-55%, -45%);                 
+ z-index: 1;
+ width: 110%;               /* размер пятна */
+ height: 110%;
+ background: radial-gradient(
+    circle,
+    rgb(142, 1, 36, 1) 30%, transparent 50% );
+  filter: blur(80px);         /* мягкий эффект */
+  mix-blend-mode: screen;     /* свечение на тёмном фоне */
+  pointer-events: none;       /* клики проходят сквозь блик */
+}
+
+ &__title-first {
+   font-family: Moderustic, ExtraBold; 
+   letter-spacing: -2%;
+   font-size: 190px; 
+   font-weight: 700;
+   background: #FFFFFF;
+  -webkit-background-clip: text;
+   background-clip: text;
+   color: transparent;
+   margin: 0;
+   z-index: 1;
+ }
+ &__title-two {
+   font-family: Moderustic, ExtraBold; 
+   letter-spacing: -2%;
+   font-size: 140px; 
+   font-weight: 700;
+   color: #8E0124;
+   margin: 0;
+   padding: 0;
+   z-index: 2;
+ }
+&__group {
+  margin-top: clamp(20px, 10vw, 500px);
+}
+ 
+&__group2 {
+ display: flex; 
+ gap: 100px;
+ margin-top: -500px;
+}
+&__group3 {
+display: flex;
+justify-content: space-between;
+margin-top: 100px;  
+height: 208px;
+}
+&__text {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  padding: 20px 25px 20px 25px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 73px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Open Sans', Bold;
+  font-weight: 500;
+}
+&__offer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+  text-align: left;
+  font-size: 24px;
+  width: 568px;
+  padding: 20px 40px 20px 40px;
+  color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid #3B3B3B;
+  height: 142px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Open Sans', regular;
+  font-weight: 300;
+  margin-right: 90px;
+  z-index: 2;  
+}
+&__text2 {
+ font-family: 'Open Sans', Bold;
+ color: #FFFFFF; 
+ font-size: 26px;
+ margin: 0;
+}
+&__btn {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  justify-content: space-between;
+  width: 261px;
+  height: 66px;
+  padding: 7px 5px 7px 23px;
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 38px;
+  color: #000000;
+  font-family: 'Open Sans', Bold;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  &:hover {
+  background-color: #FF82A1; 
+  }
+}
+.btn-icon-circle {
+  background: url("src/assets/images/Group 794.svg") no-repeat right 1px center;
+ width: 70px;
+ height: 70px;
+}
+ &__img {
+ margin-top: -110px;
+ margin-left: 320px;
+ max-width: 886px;
+ position: relative;
+ object-fit: cover;
+ z-index: 2;
+ }   
+
+ .blic2 {
+ position: absolute; 
+ top: 30%;   
+ left: 0%; 
+ transform: translate(-50%, -5%);                 
+ z-index: 1;
+ width: 250%;               /* размер пятна */
+ height: 100%;
+ background: radial-gradient(
+    circle,
+    rgba(99, 28, 222, 0.4) 0%, transparent 50% );
+  filter: blur(60px);         /* мягкий эффект */
+  mix-blend-mode: screen;     /* свечение на тёмном фоне */
+  pointer-events: none;       /* клики проходят сквозь блик */
+}
+&__star {
+position: absolute;    
+ top: 0%;
+ left: 80%;                
+ z-index: 1;
+}
+}
